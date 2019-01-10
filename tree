@@ -1,0 +1,22 @@
+import java.util.*;
+public class tree {
+	public static void main (String[]args) {
+		
+		for(int row = 5; row > 0; row--) {
+			for (int col = 1; col < row; col++) 
+				System.out.print(" ");
+			for(int i = 5; i >= row; i--)
+				System.out.print("**");
+			for (int col = 1; col < row; col++) 
+				System.out.print(" ");
+			System.out.println();
+			if(row == 1) {
+				for (int trunk = 0; trunk < 3; trunk++)
+					System.out.println("    **    ");
+			}
+		}
+		
+		
+		
+	}
+}
