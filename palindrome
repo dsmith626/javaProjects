@@ -1,0 +1,35 @@
+import java.util.*;
+public class palindrome {
+	public static void main (String[]args) {
+		
+		Scanner s = new Scanner(System.in);
+		
+		
+		String user = "y";
+		
+		char current;
+		
+		while(!user.equals("no")) {
+			
+			String backwards = "";
+			System.out.println("enter a word : ");
+			String test = s.next();
+			
+			for(int i = test.length() - 1; i >= 0; i--) {
+				current = test.charAt(i);
+				backwards += current;
+			}
+			if(backwards.equals(test)) {
+				System.out.println("yes! It's a palindrome! : )");
+			}else {
+				System.out.println("No. It's not a palindrome. : (");
+			}
+		System.out.println("would you like to test another word?");
+		user = s.next();
+		
+		}
+		
+		
+		
+	}
+}
