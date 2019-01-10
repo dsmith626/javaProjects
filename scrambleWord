@@ -1,0 +1,48 @@
+import java.util.*;
+public class scrambleTest {
+	public static void main (String[]args) {
+		
+		scrambleWord bob = new scrambleWord();
+		
+		Scanner s = new Scanner(System.in);
+		String play = "yes";
+		
+		
+		do {
+		
+		System.out.print("enter word:  ");
+		String word = s.nextLine();
+		word = word.toUpperCase();
+		
+			int i = 0;
+			String scrambled = "";
+			
+			while(i < word.length() - 1) {
+				char current = word.charAt(i);
+				char after = word.charAt(i+1);
+				
+				if(current == 'A') {
+					if(after != 'A'){
+						scrambled += after;
+						scrambled += current;
+						i += 2;
+					}
+				
+				}
+				else {
+					scrambled+=current;
+					i++;
+				}
+			}
+			scrambled += word.charAt(word.length() - 1);
+			
+			System.out.println(scrambled.toLowerCase());
+			
+			
+			System.out.println("Play again??");
+			play = s.nextLine();
+		}while(!play.equals("no"));
+
+	
+	}
+}
