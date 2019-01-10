@@ -1,0 +1,108 @@
+import java.util.Scanner;
+public class RPS {
+	public static void main (String[]args){
+		
+		
+		Scanner s = new Scanner(System.in);
+		
+		
+		String play;
+		String computer;
+		String player;
+		int win = 0;
+		int loss = 0;
+		int tie = 0;
+		do{
+			
+			
+			int comp = (int)(1+ Math.random()*3);
+			
+			if(comp == 1)
+				computer = "rock";
+			else if(comp == 2)
+				computer = "paper";
+			else
+				computer = "scissors";
+			
+			
+			System.out.println("enter rock, paper, or scissors: ");
+			player = s.nextLine();
+			
+			
+			if(computer.equals("rock") && player.equals("rock")){
+				System.out.println("the computer got : " + computer);
+				System.out.println("tie ");
+				tie++;
+				System.out.println("wins : " + win + " losses : " + loss + " ties : " + tie);
+			}
+			else if(computer.equals("rock")&&player.equals("paper")){
+				System.out.println("the computer got : " + computer);
+				System.out.println("YOU WIN : )");
+				win++;
+				System.out.println("wins : " + win + " losses : " + loss + " ties : " + tie);
+
+			}
+			else if (computer.equals("rock")&&player.equals("scissors")){
+				System.out.println("the computer got : " + computer);
+				System.out.println("computer wins");
+				loss++;
+				System.out.println("wins : " + win + " losses : " + loss + " ties : " + tie);
+
+			}
+			else if (computer.equals("paper")&&player.equals("rock")){
+				System.out.println("the computer got : " + computer);
+				System.out.println("computer wins");
+				loss++;
+				System.out.println("wins : " + win + " losses : " + loss + " ties : " + tie);
+
+			}
+			else if (computer.equals("paper")&&player.equals("paper")){
+				System.out.println("the computer got" + computer);
+				System.out.println("tie ");
+				tie++;
+				System.out.println("wins : " + win + " losses : " + loss + " ties : " + tie);
+
+			}
+			else if (computer.equals("paper")&&player.equals("scissors")){
+				System.out.println("the computer got : " + computer);
+				System.out.println("YOU WIN : )");
+				win++;
+				System.out.println("wins : " + win + " losses : " + loss + " ties : " + tie);
+
+			}
+			else if (computer.equals("scissors")&&player.equals("rock")){
+				System.out.println("the computer got : " + computer);
+				System.out.println("YOU WIN : )");
+				win++;
+				System.out.println("wins : " + win + " losses : " + loss + " ties : " + tie);
+
+			}
+			else if (computer.equals("scissors")&&player.equals("paper")){
+				System.out.print("the computer got : " + computer);
+				System.out.println("computer wins : ");
+				loss++;
+				System.out.println("wins : " + win + " losses : " + loss + " ties : " + tie);
+
+			}
+			else if (computer.equals("scissors")&&player.equals("scissors")){
+				System.out.print("the computer got : " + computer);
+				System.out.println("tie ");
+				tie++;
+				System.out.println("wins : " + win + " losses : " + loss + " ties : " + tie);
+
+				
+			}
+			
+			
+			System.out.println("play again? :");
+			play = s.nextLine();
+			
+			
+		}while(!play.equals("no"));
+		
+		
+		
+		
+		
+	}
+}
