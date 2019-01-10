@@ -1,0 +1,121 @@
+import java.util.*;
+public class lexi {
+	public static void main(String[]args) {
+		
+		Scanner david = new Scanner(System.in);
+		
+		System.out.println("enter a word : ");
+		String a = david.next();
+		System.out.println("enter a word : ");
+		String b = david.next();
+		System.out.println("enter a word : ");
+		String c = david.next();
+		System.out.println("enter a word : ");
+		String d = david.next();
+		
+		
+String lexi = "";
+		
+		if (a.compareTo(b) < 0 && a.compareTo(c) < 0 && a.compareTo(d) < 0) {
+			if (b.compareTo(c) < 0 && b.compareTo(d) < 0){
+				if(c.compareTo(d) < 0){
+					lexi +=  a + ", "  + b + ", " + c + ", " + d;
+				}
+				else {
+					lexi += a + ", " + b + ", " + d + ", " + c;
+				}
+			}
+			else if (b.compareTo(c) > 0 && b.compareTo(d) < 0){
+				lexi = a + ", " + c + ", " + b + ", " + d;
+			}
+			else if (b.compareTo(d) > 0 && b.compareTo(c) < 0){
+				lexi = a + ", " + d + ", " + b + ", " + c;
+			}
+			else {
+				if(c.compareTo(d) < 0)
+					lexi = a + ", " + c + ", " + d + ", " + b;
+				else
+					lexi = a + ", " + d + ", " + c + ", " + b;
+				}
+			}
+			
+			
+		
+		
+		else if(b.compareTo(a) < 0 && b.compareTo(c) < 0 && b.compareTo(d) < 0 ) {
+			if (a.compareTo(c) < 0 && a.compareTo(d) < 0){
+				if(c.compareTo(d) < 0){
+					lexi = b + ", " + a + ", " + c + ", " + d;
+				}
+				else {
+					lexi = b + ", " + a + ", " + d + ", " + c;
+				}
+			}
+			else if (a.compareTo(c) > 0 && a.compareTo(d) < 0){
+				lexi = b + ", " + c +", " + a + ", " + d;
+			}
+			else if (a.compareTo(d) > 0 && a.compareTo(c) < 0){
+				lexi = b + ", " + d + ", " + a + ", " + c;
+			}
+			else {
+				if(c.compareTo(d) < 0)
+					lexi = b + ", " + c + ", " + d + ", " + a;
+				else
+					lexi = b + ", " + d + ", " + c + ", " + a;
+				}
+			}
+		
+		
+		else if(c.compareTo(a) < 0 && c.compareTo(b) < 0 && c.compareTo(d) < 0 ) {
+			if (a.compareTo(b) < 0 && a.compareTo(d) < 0){
+				if(b.compareTo(d) < 0){
+					lexi = c + ", " + a + ", " + b + ", " + d;
+				}
+				else {
+					lexi = c + ", " + a + ", " + d + ", " + b;
+				}
+			}
+			else if (a.compareTo(b) > 0 && a.compareTo(d) < 0){
+				lexi = c + ", " + b + ", " + a + ", " + d;
+			}
+			else if (a.compareTo(d) > 0 && a.compareTo(b) < 0){
+				lexi = c + ", " + d + ", " + a + ", " + b;
+			}
+			else {
+				if(c.compareTo(d) < 0)
+					lexi = c +  ", " + c + ", " + d + ", " + a;
+				else
+					lexi = c +  ", " + d + ", " + c + ", " + a;
+				}
+			}
+		
+		else if(d.compareTo(a) < 0 && d.compareTo(b) < 0 && d.compareTo(c) < 0 ) {
+			if (a.compareTo(b) < 0 && a.compareTo(c) < 0){
+				if(b.compareTo(c) < 0){
+					lexi = d + ", " +  a + ", " + b + ", " + c;
+				}
+				else {
+					lexi = d + ", " + a +", " + c + ", " + b;
+				}
+			}
+			else if (a.compareTo(b) > 0 && a.compareTo(c) < 0){
+				lexi = d + ", " + b + ", " + a + ", " + c;
+			}
+			else if (a.compareTo(c) > 0 && a.compareTo(b) < 0){
+				lexi = d + ", " + c +  ", " + a  + ", "  + b;
+			}
+			else {
+				if(b.compareTo(c) < 0)
+					lexi = d + ", " + b + ", " + c + ", " + a;
+				else
+					lexi = d + ", " + c + ", " + b + ", " + a;
+				}
+			}
+		System.out.println();
+
+		System.out.println(lexi);
+		
+		
+		
+	}
+}
