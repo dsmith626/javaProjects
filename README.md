@@ -11,7 +11,7 @@ Lexi sorts four given strings lexigraphically, or alphabetically. I did this wit
 
 # palindrome
 
-Palindrome tells if a word is a palindrome. A palindrome is a word that is spelled the same backwards and forwards.
+Palindrome tests if a word is a palindrome. A palindrome is a word that is spelled the same backwards and forwards.
 
 ![screen shot 2019-01-10 at 7 34 43 pm](https://user-images.githubusercontent.com/37881002/51007959-4fdbac00-150f-11e9-8138-17a175024a17.png)
 
