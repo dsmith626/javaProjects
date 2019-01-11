@@ -17,6 +17,9 @@ Palindrome tells if a word is a palindrome. A palindrome is a word that is spell
 
 This is a standard rock paper scissors game that displays your record after each game.
 
+![screen shot 2019-01-10 at 7 35 35 pm](https://user-images.githubusercontent.com/37881002/51007986-671a9980-150f-11e9-967e-824c713273fa.png)
+
+
 # tree
 
 This prints a tree made of asteriks to the console.
