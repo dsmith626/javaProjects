@@ -17,3 +17,5 @@ This is a standard rock paper scissors game that displays your record after each
 # tree
 
 This prints a tree made of asteriks to the console.
+
+![screen shot 2019-01-10 at 7 36 05 pm](https://user-images.githubusercontent.com/37881002/51007941-38042800-150f-11e9-9e3e-872b13fd03e0.png)
